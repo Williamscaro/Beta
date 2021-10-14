@@ -1,0 +1,83 @@
+#ancho{
+
+    width: 100%;
+}
+/*
+1A87AA oscuro 
+47ABC5 claro
+
+*/
+
+.boton{
+    width: 348px;
+height: 49px;
+left: 176px;
+top: 691px;
+
+background: #1FA0C0;
+border: 1px solid #1FA0C0;
+box-sizing: border-box;
+border-radius: 12px;
+color: white;
+}
+
+
+.boton:hover{
+    width: 348px;
+height: 49px;
+left: 176px;
+top: 691px;
+
+background:#38C7EA;
+border: 1px solid #1FA0C0;
+box-sizing: border-box;
+border-radius: 12px;
+color: white;
+
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+
+.boton-home{
+    width: 148px;
+height: 49px;
+left: 176px;
+top: 691px;
+
+background: #ffffff;
+border: 1px solid #1FA0C0;
+box-sizing: border-box;
+border-radius: 12px;
+color: rgb(0, 0, 0);
+}
+
+
+.boton-home:hover{
+    width: 148px;
+height: 49px;
+left: 176px;
+top: 691px;
+
+background:#1FA0C0;
+border: 1px solid #1FA0C0;
+box-sizing: border-box;
+border-radius: 12px;
+color: white;
+
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+footer {
+	background: #474A57;
+}
+
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
