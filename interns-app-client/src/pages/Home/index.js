@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import HeroSection from "../../components/HeroSection";
+import Footer from "../../components/landing/Footer";
+import Header from "../../components/landing/home/HomeHeader";
+import HeroSection from "../../components/landing/home/HeroSection";
 export default function Home() {
   return (
     <>

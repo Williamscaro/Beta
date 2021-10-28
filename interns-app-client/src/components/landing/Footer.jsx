@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/style.css';
-import { GithubIcon, FacebookIcon, YoutubeIcon, LinkedinIcon } from "./icons";
+import '../../styles/style.css';
+import { GithubIcon, FacebookIcon, YoutubeIcon, LinkedinIcon } from '../icons/index.js';
 
 export default function Footer() {
   return (

@@ -2,9 +2,10 @@
 function App() {
   
   return (
-    <div className="App">
-      <p>hola</p>
-    </div>
+  <>
+      
+      <h1>hola mundo desde el app</h1>
+   </>
   );
 }
 

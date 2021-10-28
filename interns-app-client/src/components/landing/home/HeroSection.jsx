@@ -1,9 +1,10 @@
 import React from "react";
+import ApplyButton from "./ApplyButton";
 
 export default function HeroSection() {
   return (
     <div>
-      <div className="px-4 py-5 my-5 text-center">
+      <div className="px-4 py-5 my-5 text-center " >
         <h1 className="display-1 fw-bold">Bienvenido a AI Logic</h1>
         <h1 className="display-5 fw-bold">Pasante</h1>
         <div className="col-lg-6 mx-auto">
@@ -15,10 +16,8 @@ export default function HeroSection() {
           brindar soluciones tecnologias internacionalmente
           </p>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" className="btn btn-primary btn-lg px-4 gap-3">
-              Aplicar
-            </button>
 
+          <ApplyButton clasStyles = "btn btn-primary btn-lg px-4 gap-3" />
           </div>
         </div>
       </div>

@@ -44,5 +44,9 @@
   "devDependencies": {
     "babel-loader": "^8.2.2",
     "file-loader": "^6.2.0"
+  },
+  "optionalDependencies": {
+    "babel-loader": "8.1.0"
   }
+
 }
