@@ -1,12 +1,15 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/style.css'
-import { TasksIcon,TachometerAltIcon,UserIcon,UserCogIcon,StickyNoteIcon,CogsIcon } from "../icons";
+import '../../../styles/style.css'
+import { TasksIcon,TachometerAltIcon,UserIcon,UserCogIcon,StickyNoteIcon,CogsIcon } from "../../icons";
+import HeaderAppRegistrationAsig from './HeaderAppRegistrationAsig';
+import SegundaBarraAppAsig from './SegundaBarraAppAsig';
+import Seccionticket from './Seccionticket';
 
 
 
 
-export default function BarraLateralIzquierdaapp() {
+export default function BarraLateralIzquierdaappAsig() {
     return (
         <div className="container-fluid  ">
         <div className="row">
@@ -53,6 +56,10 @@ export default function BarraLateralIzquierdaapp() {
                 </div>
             </div>
             <div className="col-sm p-3 min-vh-100">
+                <HeaderAppRegistrationAsig/>
+                <SegundaBarraAppAsig/>
+                <Seccionticket/>
+
             </div>
         </div>
     </div>

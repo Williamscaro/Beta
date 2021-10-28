@@ -1,6 +1,6 @@
 import React from "react";
 import Ticket from "./Ticket";
-import FiltradoTicket from "../../FiltradoTicket"
+import FiltradoTicket from "./FiltradoTicket"
 
 export default function Seccionticket() {
     return (

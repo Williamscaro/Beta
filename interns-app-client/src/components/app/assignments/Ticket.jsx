@@ -1,5 +1,5 @@
 import React  , {useState,useEffect} from 'react'
-import {getAsignaciones} from './../helpers/asignaciones'
+import {getAsignaciones} from '../../../helpers/asignaciones'
 
 
 export default function Ticket() {

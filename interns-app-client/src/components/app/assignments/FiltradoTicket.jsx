@@ -1,9 +1,9 @@
 import React  , {useState,useEffect} from 'react'
-import {getAllImportancia, getImportanciaById} from '../helpers/importancia'
-import {getAllestado, getestadoById} from '../helpers/estado'
-import {getAllcreado, getcreadoById} from '../helpers/creacion'
-import {getAllgrupo, getgrupoById} from '../helpers/grupo'
-import {getAlltipo, gettipoById} from '../helpers/tipo'
+import {getAllImportancia, getImportanciaById} from '../../../helpers/importancia'
+import {getAllestado, getestadoById} from '../../../helpers/estado'
+import {getAllcreado, getcreadoById} from '../../../helpers/creacion'
+import {getAllgrupo, getgrupoById} from '../../../helpers/grupo'
+import {getAlltipo, gettipoById} from '../../../helpers/tipo'
 
 
 

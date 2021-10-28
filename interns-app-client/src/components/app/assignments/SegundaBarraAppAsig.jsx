@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import {DoorClosedIcon,DoorOpenIcon} from "../icons";
+import {DoorClosedIcon,DoorOpenIcon} from "../../icons";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/style.css'
+import '../../../styles/style.css'
 
-export default function SegundaBarraApp() {
+export default function SegundaBarraAppAsig() {
 
     const pagina = ("1 - 12 de 12")
 
