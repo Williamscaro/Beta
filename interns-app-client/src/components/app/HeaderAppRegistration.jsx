@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/style.css';
-import {SignoutaltIcon,BarsIcon} from "./icons";
+import '../../styles/style.css'
+import {SignoutaltIcon,BarsIcon} from "../icons";
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown  from 'react-bootstrap/Dropdown'
 
