@@ -1,10 +1,10 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css';
-import { TasksIcon,TachometerAltIcon,UserIcon,UserCogIcon,StickyNoteIcon,CogsIcon } from "./icons";
-import Seccionticket from "./Seccionticket";
-import SegundaBarraApp from "./SegundaBarraApp";
-import HeaderAppRegistration from "./HeaderAppRegistration";
+import { TasksIcon,TachometerAltIcon,UserIcon,UserCogIcon,StickyNoteIcon,CogsIcon } from "../icons";
+import Seccionticket from "./assignments/Seccionticket";
+import SegundaBarraApp from "../SegundaBarraApp";
+import HeaderAppRegistration from "../HeaderAppRegistration";
 
 
 
@@ -56,10 +56,6 @@ export default function BarraLateralIzquierdaapp() {
                 </div>
             </div>
             <div className="col-sm p-3 min-vh-100">
-            < HeaderAppRegistration/> 
-            <SegundaBarraApp />  
-            <Seccionticket/>                
-      
             </div>
         </div>
     </div>
