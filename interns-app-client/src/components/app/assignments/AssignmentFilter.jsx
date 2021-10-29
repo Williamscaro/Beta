@@ -117,6 +117,8 @@ export default function FiltradoTicket() {
                 {tipoStatus.map(({tipo, id}) => <option value = {id}>{tipo}</option>)}
               </select>
 
+              
+
 
 
 
