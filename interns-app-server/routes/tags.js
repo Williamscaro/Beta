@@ -4,8 +4,8 @@ const { tags } = require("../models")
 
 
 router.get("/", async (req, res) => {
-    const todoslostaga = await tags.findAll()
-    res.json(todoslostaga)
+    const todoslostags = await tags.findAll()
+    res.json(todoslostags)
 
 });
 
@@ -16,11 +16,6 @@ router.post("/", async (req, res) => {
     res.json(tag);
 
 });
-
-
-
-
-
 
 
 
