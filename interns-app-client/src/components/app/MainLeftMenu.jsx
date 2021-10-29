@@ -1,17 +1,14 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/style.css';
+import '../../styles/style.css'
 import { TasksIcon,TachometerAltIcon,UserIcon,UserCogIcon,StickyNoteIcon,CogsIcon } from "../icons";
-import Seccionticket from "./assignments/Seccionticket";
-import SegundaBarraApp from "../SegundaBarraApp";
-import HeaderAppRegistration from "../HeaderAppRegistration";
 
 
 
 
 export default function BarraLateralIzquierdaapp() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid  ">
         <div className="row">
             <div className="col-sm-auto  bg-dark sticky-top">
                 <div className="d-flex  bg-dark flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
