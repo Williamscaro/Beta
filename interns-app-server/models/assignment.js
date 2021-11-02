@@ -8,8 +8,8 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     Subject: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.STRING(250),
+      allowNull: true
     },
     Type_id: {
       type: DataTypes.INTEGER,
