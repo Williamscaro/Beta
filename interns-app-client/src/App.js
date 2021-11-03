@@ -1,6 +1,6 @@
 import TopNav from "./components/app/TopNav";
 import AssignmentSection from "./components/app/assignments/AssignmentSection";
-import Group from "./components/app/group/Group";
+import Group from "./components/app/group/GroupSection";
 import Users from "./components/app/users/UserSectiongeneral";
 import Dashboard from "./components/app/dashboard/Dashboard";
 
