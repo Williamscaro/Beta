@@ -34,6 +34,27 @@ app.use("/personal_info",personal_infoRouter);
 const priority_assignmentRouter = require('./routes/priority_assignment');
 app.use("/priority_assignment",priority_assignmentRouter);
 
+const direccionRouter = require('./routes/direccion');
+app.use("/direccion",direccionRouter);
+
+const web_resoursesRouter = require('./routes/web_resourses');
+app.use("/web_resourses",web_resoursesRouter);
+
+
+const institucion_infoRouter = require('./routes/institucion_info');
+app.use("/institucion_info",institucion_infoRouter);
+
+
+const web_resourses_typeRouter = require('./routes/web_resourses_type');
+app.use("/web_resourses_type",web_resourses_typeRouter);
+
+
+const academic_statusRouter = require('./routes/academic_status');
+app.use("/academic_status",academic_statusRouter);
+
+
+
+
 
 
 
