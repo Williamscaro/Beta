@@ -10,7 +10,6 @@ export default function AssignmentSection() {
         <div className="row py-5 border-bottom">
           <div className="col-sm-12 col-md-8 shadow p-3 mb-5 bg-body rounded card">
             <h5 className="mb-3">Asignaciones</h5>
-
             <Assignment />
           </div>
 
