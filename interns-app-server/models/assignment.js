@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('assignment', {
+  const assignment = sequelize.define('assignment', {
     id: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
@@ -113,4 +113,25 @@ module.exports = function(sequelize, DataTypes) {
       },
     ]
   });
+
+  
+  assignment.associate = function(models) {
+    assignment.hasMany(models.type_assignment,  {as: 'type', foreignKey: 'id',sourceKey: 'Type_id'});
+    
+
+  }
+    
+  assignment.associate = function(models) {
+    assignment.hasMany(models.status_assignment, {as: 'status' ,foreignKey: 'id',sourceKey: 'status_id'});
+    assignment.hasMany(models.type_assignment,  {as: 'type', foreignKey: 'id',sourceKey: 'Type_id'});
+    assignment.hasMany(models.priority_assignment,  {as: 'priority', foreignKey: 'id',sourceKey: 'priority_id'});
+    assignment.hasMany(models.teams,  {foreignKey: 'id',sourceKey: 'team_id'});
+    assignment.hasMany(models.user,  {foreignKey: 'id',sourceKey: 'agent_id'});
+
+    
+
+  }
+
+
+  return assignment
 };

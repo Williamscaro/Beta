@@ -1,7 +1,45 @@
 const express = require('express');
 const router = express.Router();
-const { assignment } = require("../models")
+const { assignment,type_assignment,status_assignment,priority_assignment,teams,user } = require("../models")
 
+
+router.get("/views", async (req, res) => {
+  const todoslosassignment = await assignment.findAll({
+
+    attributes:['id','Subject','description','start_date','end_date'],
+    include:[
+      {
+        model: status_assignment,
+        as: 'status',
+        attributes:['desctiption']
+      },
+     {
+        model: type_assignment,
+        as: 'type',
+        attributes:['description']
+      },
+      {
+        model: priority_assignment,
+        as: 'priority',
+        attributes:['description']
+      },
+      {
+        model: teams,
+        attributes:['name']
+
+      },
+      {
+        model: user,
+        attributes:['username']
+    
+      },
+
+    ] ,
+ 
+  })
+  res.json(todoslosassignment)
+
+});
 
 router.get("/", async (req, res) => {
     const todoslosassignment = await assignment.findAll()
