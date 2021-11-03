@@ -7,7 +7,6 @@ function App() {
   <>
       <HeaderAppRegistration/>
       <h1>hola mundo desde el app</h1>
-      <SegundaBarraApp/>
       <HeaderAppRegistration/>
    </>
   );
