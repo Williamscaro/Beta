@@ -6,7 +6,7 @@ const { user } = require("../models")
 router.get("/", async (req, res) => {
     const todoslosuser = await user.findAll()
     res.json(todoslosuser)
-
+    
 });
 
 
