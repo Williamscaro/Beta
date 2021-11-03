@@ -1,8 +1,11 @@
 import React from "react";
 import TimeLine from "./TimelineUser";
 import GeneralInformation from "./GeneralInformation";
+import Academicos from "./AcademicUser";
 
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch} from "react-router-dom";
+import Academic from "./AcademicUser";
+import PersonalLinks from "./PersonalLink";
 
 export default function Menu() {
   let url = "/register";
@@ -12,13 +15,25 @@ export default function Menu() {
       <Router>
         <ul className="nav nav-tabs ul-down">
           <li className="nav-item">
-            <Link className="nav-link " to={`${url}/general-info`}>
+            <Link className="nav-link " to={`${url}/Timeline`}>
                 Timeline
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={`${url}/academic`}>
+            <Link className="nav-link" to={`${url}/info-general`}>
               Informacion general
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to={`${url}/academic`}>
+              Academicos
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to={`${url}/links`}>
+              Links
             </Link>
           </li>
 
@@ -27,19 +42,23 @@ export default function Menu() {
 
         <Switch>
 
-          <Route path={`${url}/general-info`}>
+          <Route path={`${url}/Timeline`}>
             <TimeLine />
           </Route>
 
-          <Route path={`${url}/academic`}>
+          <Route path={`${url}/info-general`}>
           <GeneralInformation />
-
-
           </Route>
-          {/*           <Route path={`${url}/self-appraisal`}>
-            <SelfAppraisal />
-          </Route> */}
 
+          <Route path={`${url}/academic`}>
+            <Academic />
+          </Route>
+
+          
+          <Route path={`${url}/links`}>
+            <PersonalLinks />
+          </Route>
+    
         </Switch>
       </Router>
     </div>

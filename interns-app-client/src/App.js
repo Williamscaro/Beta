@@ -1,6 +1,7 @@
 import TopNav from "./components/app/TopNav";
 import AssignmentSection from "./components/app/assignments/AssignmentSection";
 import Group from "./components/app/group/GroupSection";
+import Usersgeneral from "./components/app/users/alluser/UserSection"
 import Users from "./components/app/users/UserSectiongeneral";
 import Dashboard from "./components/app/dashboard/Dashboard";
 
@@ -120,7 +121,7 @@ const App = () => {
                 <AssignmentSection />
               </Route>
               <Route path={`/users`}>
-                <Users />
+                <Usersgeneral />
               </Route>
               <Route path={`/groups`}>
                 <Group />

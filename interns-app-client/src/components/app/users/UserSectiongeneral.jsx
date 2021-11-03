@@ -25,7 +25,7 @@ export default function UserSectiongeneral() {
     <div class="col-md-12 col-12 pt-4 d-none d-sm-none d-md-block"></div>
     
     
-          <div class=" col-8 col-md-8 text-center">
+          <div class=" col-8 col-md-12 text-center">
 
           <div class="row d-flex justify-content-start ">
               <div class="col-md-12 ">
@@ -39,12 +39,6 @@ export default function UserSectiongeneral() {
 
           </div>
 
-             
-          <div class="col-md-4 shadow mb-5 bg-body rounded card">
-
-            <Filteruser/>
-      
-          </div>
           
           
         </div>
