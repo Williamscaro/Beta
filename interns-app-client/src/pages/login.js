@@ -7,32 +7,56 @@ import axios from "axios";
 
 
 export default function Login() {
+  const [listOfUser, setListOfUsers] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+  useEffect(()=> {
+    axios.get("http://localhost:3001/user").then((response) =>{
+      setListOfUsers(response.data);
+    },[])
+  })
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+
+  const login = () =>{
+    const data = {username: username, password: password}
+    axios.post("http://localhost:3001/user", data).then((response) =>{
+      console.log(response.data);
+    })
+  };
   return (
+    
     <>
       <Header />
       <main class="form-signin rounded-bottom align-middle ">
         <form onSubmit={handleSubmit}>
           <img class="mb-4 " src={large} alt="" width="72" height="57" />
           <h2 class="h3 mb-3 fw-normal login-title">Login</h2>
-
           <div class="form-floating my-2">
             <input
               type="email"
               class="form-control"
               id="floatingInput"
               placeholder="name@example.com"
+              onChange={(event) => {
+                setUsername(event.target.value)} }
             />
+
             <label for="floatingInput">Email</label>
           </div>
           <div class="form-floating  my-2">
-            <input
+              
+              <input
               type="password"
               class="form-control"
               id="floatingPassword"
               placeholder="Password"
+              onChange={(event) => {
+                setPassword(event.target.value)} }
             />
             <label for="floatingPassword">Constraseña</label>
           </div>
@@ -49,7 +73,11 @@ export default function Login() {
             </div>
           </div>
 
+
+
+
           <input
+            onClick={login}
             type="submit"
             className="w-100 btn btn-lg bg-color-primary btn-send"
             value="Iniciar sección"

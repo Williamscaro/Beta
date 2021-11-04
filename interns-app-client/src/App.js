@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <HeaderAppRegistration/>
-      <h1>hola mundo desde el app</h1>
+      <h1>hola mundo desde el app.js </h1>
    </>
   );
 }
