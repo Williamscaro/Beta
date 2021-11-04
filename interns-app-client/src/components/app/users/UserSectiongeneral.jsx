@@ -1,10 +1,6 @@
 
 import Users from "./User";
-import TimelineUser from "./TimelineUser";
-import Academic from "./AcademicUser";
 import React from "react";
-import GeneralInformation from "./GeneralInformation";
-import Filteruser from "./Filteruser";
 import MenuUser from "./MenuUser";
 
 

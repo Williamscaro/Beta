@@ -1,9 +1,8 @@
 import React from "react";
 import TimeLine from "./TimelineUser";
 import GeneralInformation from "./GeneralInformation";
-import Academicos from "./AcademicUser";
 
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Academic from "./AcademicUser";
 import PersonalLinks from "./PersonalLink";
 

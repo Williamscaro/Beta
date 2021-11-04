@@ -5,6 +5,8 @@ import "../../../styles/style.css";
 export default function Ticket() {
   const [User, setUser] = useState([]);
 
+ 
+
   useEffect(() => {
     const dataUser = getUser();
     setUser(dataUser);

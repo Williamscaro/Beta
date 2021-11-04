@@ -30,7 +30,7 @@ export default function GeneralInformation() {
 
   //WHEN YOU SELECT A PROVINCE, THEN THE CITY SELECTS LOAD
   useEffect(() => {
-    if (provinciaId != 0) {
+    if (provinciaId !== 0) {
       const data = getMunicipiosByProvincia(provinciaId);
       setmunicipios(data);
     }
