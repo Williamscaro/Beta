@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Button, Modal, ModalBody} from "reactstrap";
+import {Modal, ModalBody} from "reactstrap";
 import Ejemplo from '../UserSectiongeneral'
 
  
@@ -105,9 +105,7 @@ export default function User() {
       ))}
 
       <Modal className="modal-xl position-center me-5"
-        isOpen={modal}
-        
-        >
+        isOpen={modal}>
        <ModalBody className="">
           <Ejemplo/>
           <button className="btn btn-primary mt-3" onClick={cerrarModal}>Cerrar</button>

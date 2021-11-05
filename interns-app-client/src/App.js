@@ -3,7 +3,8 @@ import AssignmentSection from "./components/app/assignments/AssignmentSection";
 import Group from "./components/app/group/GroupSection";
 import Usersgeneral from "./components/app/users/alluser/UserSection"
 import Users from "./components/app/users/UserSectiongeneral";
-import Dashboard from "./components/app/dashboard/Dashboard";
+import Dashboard from "./components/app/group/CreatePostgroup";
+import TopNavGroup from "./components/app/group/TopNavGroup";
 
 import {
   BrowserRouter as Router,
@@ -112,18 +113,21 @@ const App = () => {
             </div>
           </div>
           <div className="col-sm p-3 min-vh-100">
-            <TopNav />
             <Switch>
               <Route exact path="/">
+              <TopNav />
                 <Dashboard />
               </Route>
               <Route path={`/assignments`}>
+              <TopNav />
                 <AssignmentSection />
               </Route>
               <Route path={`/users`}>
+              <TopNav />
                 <Usersgeneral />
               </Route>
               <Route path={`/groups`}>
+              <TopNavGroup />
                 <Group />
               </Route>
             </Switch>
