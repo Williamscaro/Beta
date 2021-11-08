@@ -1,17 +1,20 @@
-<<<<<<< HEAD
+
 import HeaderAppRegistration from "./components/app/HeaderAppRegistration";
 import login from './pages/login'
 import Menu from './components/landing/register/Menu'
 import HomeRegister from "./components/landing/register/HomeRegister";
 import GeneralInformation from './components/landing/register/GeneralInformation'
 
-=======
+
 import TopNav from "./components/app/TopNav";
 import AssignmentSection from "./components/app/assignments/AssignmentSection";
-import Group from "./components/app/group/Group";
-import Users from "./components/app/users/Users";
+import Group from "./components/app/group/GroupSection";
+import Usersgeneral from "./components/app/users/alluser/UserSection"
+import Users from "./components/app/users/UserSectiongeneral";
 import Dashboard from "./components/app/dashboard/Dashboard";
->>>>>>> 901e98570c58f9ce5997e192ef864725a74e49fc
+
+import TopNavGroup from "./components/app/group/TopNavGroup";
+
 
 import {
   BrowserRouter as Router,
@@ -30,11 +33,6 @@ import {
 } from "./components/icons/index";
 const App = () => {
   return (
-<<<<<<< HEAD
-  <>
-      <GeneralInformation/>
-   </>
-=======
     <Router>
       <div className="container-fluid  ">
         <div className="row">
@@ -125,18 +123,21 @@ const App = () => {
             </div>
           </div>
           <div className="col-sm p-3 min-vh-100">
-            <TopNav />
             <Switch>
               <Route exact path="/">
+              <TopNav />
                 <Dashboard />
               </Route>
               <Route path={`/assignments`}>
+              <TopNav />
                 <AssignmentSection />
               </Route>
               <Route path={`/users`}>
-                <Users />
+              <TopNav />
+                <Usersgeneral />
               </Route>
               <Route path={`/groups`}>
+              <TopNavGroup />
                 <Group />
               </Route>
             </Switch>
@@ -144,7 +145,6 @@ const App = () => {
         </div>
       </div>
     </Router>
->>>>>>> 901e98570c58f9ce5997e192ef864725a74e49fc
   );
 };
 

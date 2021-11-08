@@ -7,7 +7,7 @@ import {getAlltipo, gettipoById} from '../../../helpers/tipo'
 
 
 
-export default function FiltradoTicket() {
+export default function FiltradoGroup() {
 
     const [ImportanciaStatus, setImportanciaStatus] = useState([])
     const [ImportanciaStatusId, setImportanciaStatusId] = useState(0)

@@ -1,13 +1,13 @@
 import React  , {useState,useEffect} from 'react'
-import {getAllImportancia, getImportanciaById} from '../../../helpers/importancia'
-import {getAllestado, getestadoById} from '../../../helpers/estado'
-import {getAllcreado, getcreadoById} from '../../../helpers/creacion'
-import {getAllgrupo, getgrupoById} from '../../../helpers/grupo'
-import {getAlltipo, gettipoById} from '../../../helpers/tipo'
+import {getAllImportancia, getImportanciaById} from '../../../../helpers/importancia'
+import {getAllestado, getestadoById} from '../../../../helpers/estado'
+import {getAllcreado, getcreadoById} from '../../../../helpers/creacion'
+import {getAllgrupo, getgrupoById} from '../../../../helpers/grupo'
+import {getAlltipo, gettipoById} from '../../../../helpers/tipo'
 
 
 
-export default function FiltradoTicket() {
+export default function FiltradoGroup() {
 
     const [ImportanciaStatus, setImportanciaStatus] = useState([])
     const [ImportanciaStatusId, setImportanciaStatusId] = useState(0)
@@ -80,11 +80,11 @@ export default function FiltradoTicket() {
     return (
         <div>
  
-             <div className="form-group  mb-4 mt-2">
+             <div className="form-Group  mb-4 mt-2">
               <input type="text" className="form-control w-100" id="Nombre_Asignacion" aria-describedby="" placeholder="Nombre de la asignacion"/>
             </div>
 
-            <div className="form-group  mb-4">
+            <div className="form-Group  mb-4">
               <input type="text" className="form-control w-100" id="N_de_la_asignacion" aria-describedby="emailHelp" placeholder="No. de la asignacion"/>
             </div>
 

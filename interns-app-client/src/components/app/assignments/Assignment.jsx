@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { getAsignaciones } from "../../../helpers/asignaciones";
-
+import axios from "axios";
+ 
 export default function Ticket() {
   const [Asignaciones, setAsignaciones] = useState([]);
 
+
+  
   useEffect(() => {
-    const dataAsignaciones = getAsignaciones();
-    setAsignaciones(dataAsignaciones);
+    axios.get("http://localhost:3001/assignment").then((response) =>{
+      setAsignaciones(response.data);
+    })
+
+    
   });
+
 
   return (
     <>
-      {Asignaciones.map(({ id, subject, type, status, priority, agent }) => (
+      {Asignaciones.map((value, key) => (
         <div className="col-12 shadow p-3 mb-2 bg-body rounded card d-inline">
           <div class="row">
             <div class="col-1 d-inline">
@@ -27,15 +33,15 @@ export default function Ticket() {
 
             <div class="col-1 d-inline-block me-4">
               <h2 class=" py-2 px-3 mt-4  d-inline-block rounded text-center border bg-danger text-white">
-                {id}
+                {value.id}
               </h2>
             </div>
 
             <div class="col-6 d-inline mt-2">
               <p class="d-inline h6">New</p>
-              <p class="h5">{subject}</p>
+              <p class="h5">{value.Subject}</p>
               <p class="">
-                <small>Creada por {agent}</small>{" "}
+                <small>Creada por {value.agent_id}</small>{" "}
               </p>
             </div>
 
@@ -44,21 +50,21 @@ export default function Ticket() {
                 prioridad:{" "}
                 <p
                   className={
-                    priority == "alta"
+                    value.priority_id == "1"
                       ? "text-white bg-danger rounded d-inline px-2 "
-                      : priority == "media"
+                      : value.priority_id == "2"
                       ? "text-white bg-warning rounded d-inline px-2 "
                       : "text-white bg-success rounded d-inline px-2 "
                   }
                 >
-                  {priority}
+                  {value.priority_id}
                 </p>{" "}
               </b>
               <b class="d-block">
-                estatus: <p className="d-inline">{status}</p>
+                estatus: <p className="d-inline">{value.status_id}</p>
               </b>
               <b class="d-block">
-                tipo: <p className="d-inline">{type}</p>
+                tipo: <p className="d-inline">{value.Type_id}</p>
               </b>
             </div>
 
