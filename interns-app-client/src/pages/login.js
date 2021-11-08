@@ -13,7 +13,7 @@ export default function Login() {
   };
 
   useEffect(()=> {
-    axios.get("http://localhost:3001/user").then((response) =>{
+    axios.get("http://localhost:3001/user/").then((response) =>{
       setListOfUsers(response.data);
     },[])
   })
@@ -24,7 +24,8 @@ export default function Login() {
 
   const login = () =>{
     const data = {username: username, password: password}
-    axios.post("http://localhost:3001/user", data).then((response) =>{
+    //Apregada palabra login a la ruta
+    axios.post("http://localhost:3001/user/login", data).then((response) =>{
       console.log(response.data);
     })
   };
@@ -38,15 +39,15 @@ export default function Login() {
           <h2 class="h3 mb-3 fw-normal login-title">Login</h2>
           <div class="form-floating my-2">
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="Usuario"
               onChange={(event) => {
                 setUsername(event.target.value)} }
             />
 
-            <label for="floatingInput">Email</label>
+            <label for="floatingInput">Usuario</label>
           </div>
           <div class="form-floating  my-2">
               

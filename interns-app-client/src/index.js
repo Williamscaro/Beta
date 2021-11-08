@@ -6,7 +6,7 @@ import LandingPage from './pages/index'
 //import 'font-awesome/css/font-awesome.min.css';
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <LandingPage/>
   </React.StrictMode>,
   document.getElementById('root')
 );

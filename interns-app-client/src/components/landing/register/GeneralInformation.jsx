@@ -139,7 +139,7 @@ export default function GeneralInformation() {
               onChange={handleChangePersonalInfo}
             />
             <div className="invalid-feedback">
-              Please enter a valid email address htmlFor shipping updates.
+              Por favór ingresa un Email Valido.
             </div>
           </div>
           {
@@ -158,7 +158,7 @@ export default function GeneralInformation() {
               onChange={handleChangePersonalInfo}
             />
             <div className="invalid-feedback">
-              Please enter a valid email address htmlFor shipping updates.
+              Por favor ingresa un telefono valido.
             </div>
           </div>
           {
@@ -244,7 +244,7 @@ export default function GeneralInformation() {
               ))}
             </select>
             <div className="invalid-feedback">
-              Por favor seleccione un municipio valida
+              Por favor seleccione un municipio valido
             </div>
           </div>
           {
@@ -290,7 +290,7 @@ export default function GeneralInformation() {
         <hr className="my-4" />
 
         <button className="w-100 btn btn-primary btn-lg" type="submit">
-          Continue en Datos Academicos
+          Continue en Datos Académicos
         </button>
       </form>
     </div>
