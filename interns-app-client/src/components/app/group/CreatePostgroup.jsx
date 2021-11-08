@@ -29,11 +29,6 @@ export default function CreatePostgroup() {
                     <ErrorMessage name="name" component="span" className="bg-danger mx-3 text-white px-2"/>
                     <Field className="form-control mb-3 " placeholder="Nombre del grupo" name="name" ></Field>
 
-                    <select>
-                        <option name="state" value = {true}>true</option>
-                        <option name="state" value = {false}>Desactivar</option>
-                    </select>
-
                     <div  className="mx-5">
                       <div  className="mx-5">
                        <button className="btn btn-primary mx-5 px-4" type="submit">Crear grupo</button> 

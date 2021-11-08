@@ -3,7 +3,7 @@ import AssignmentSection from "./components/app/assignments/AssignmentSection";
 import Group from "./components/app/group/GroupSection";
 import Usersgeneral from "./components/app/users/alluser/UserSection"
 import Users from "./components/app/users/UserSectiongeneral";
-import Dashboard from "./components/app/group/CreatePostgroup";
+import Dashboard from "./components/app/dashboard/Dashboard";
 import TopNavGroup from "./components/app/group/TopNavGroup";
 
 import {

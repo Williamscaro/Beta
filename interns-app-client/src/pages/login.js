@@ -18,12 +18,12 @@ export default function Login() {
 
           <div class="form-floating my-2">
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="floatingInput"
               placeholder="name@example.com"
             />
-            <label for="floatingInput">Email</label>
+            <label for="floatingInput">Usuario</label>
           </div>
           <div class="form-floating  my-2">
             <input
