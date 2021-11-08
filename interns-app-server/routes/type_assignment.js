@@ -18,6 +18,24 @@ router.post("/", async (req, res) => {
 
 });
 
+router.post("/:assig", async (req, res) =>{
+    const { id, description } = req.body;
+
+    /*Verificamos si el usuario existe en la tabla,
+    verificamos si existe en la base de datos un usuario registrado con ese nombre de usuario de lo contrario si no existe se quedara vacio*/
+    const user = await user.findOne({ where: {description: description} });
+            /*Devuelve un error diciendo que
+             el usuario no existé en caso de no estár
+              en la base de datos*/
+
+    if (description = type_assignment.description)  res.json({error: " Description same"});
+
+   
+
+
+
+});
+
 
 
 module.exports = router;

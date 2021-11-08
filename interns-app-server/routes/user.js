@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     const { username, password, status, person_id, user_category_id } = req.body;
     bcrypt.hash(password, 10).then((hash) =>{
         user.create({
-            /*Aún no se guarda en la base de datos, creo que es porque faltán campos, que son requeridos y no pueden ser nulos*/
+            /*Datos se insertan correctamente en la bd*/
             username: username,
             password: hash,
             status: status,
@@ -37,10 +37,11 @@ router.post("/", async (req, res) => {
 
 
 /*Aqui haremos  uso del usuario*/
-router.post('/login', async(req, res) =>{
+router.post("/login", async (req, res) =>{
     const { username, password } = req.body;
 
-    /*Aqui estamos comprobando si los datos existen en la tabla, verificamos si existe en la base de datos un usuario registrado con ese nombre de usuario de lo contrario si no existe se quedara vacio*/
+    /*Verificamos si el usuario existe en la tabla,
+    verificamos si existe en la base de datos un usuario registrado con ese nombre de usuario de lo contrario si no existe se quedara vacio*/
     const user = await user.findOne({ where: {username: username} });
             /*Devuelve un error diciendo que
              el usuario no existé en caso de no estár
@@ -52,8 +53,6 @@ router.post('/login', async(req, res) =>{
         if (!match) res.json({error: "Wrong Username and Password combination"});
         res.json("YOU LOGGED IN!"); 
     });
-
-
 
 
 
