@@ -1,13 +1,13 @@
 import React  , {useState,useEffect} from 'react'
-import {getAllImportancia, getImportanciaById} from '../helpers/importancia'
-import {getAllestado, getestadoById} from '../helpers/estado'
-import {getAllcreado, getcreadoById} from '../helpers/creacion'
-import {getAllgrupo, getgrupoById} from '../helpers/grupo'
-import {getAlltipo, gettipoById} from '../helpers/tipo'
+import {getAllImportancia, getImportanciaById} from '../../../helpers/importancia'
+import {getAllestado, getestadoById} from '../../../helpers/estado'
+import {getAllcreado, getcreadoById} from '../../../helpers/creacion'
+import {getAllgrupo, getgrupoById} from '../../../helpers/grupo'
+import {getAlltipo, gettipoById} from '../../../helpers/tipo'
 
 
 
-export default function FiltradoTicket() {
+export default function FiltradoGroup() {
 
     const [ImportanciaStatus, setImportanciaStatus] = useState([])
     const [ImportanciaStatusId, setImportanciaStatusId] = useState(0)
@@ -116,6 +116,8 @@ export default function FiltradoTicket() {
                 <option value="" >Tipo</option>
                 {tipoStatus.map(({tipo, id}) => <option value = {id}>{tipo}</option>)}
               </select>
+
+              
 
 
 
