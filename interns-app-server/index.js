@@ -52,7 +52,41 @@ app.use("/web_resourses_type",web_resourses_typeRouter);
 const academic_statusRouter = require('./routes/academic_status');
 app.use("/academic_status",academic_statusRouter);
 
+const users_teamsRouter = require('./routes/users_teams');
+app.use("/users_teams",users_teamsRouter);
 
+const tags_postRouter = require('./routes/tags_post');
+app.use("/tags_post",tags_postRouter);
+
+const tags_assignmentsRouter = require('./routes/tags_assignments');
+app.use("/tags_assignments",tags_assignmentsRouter);
+
+const postRouter = require('./routes/post');
+app.use("/post",postRouter);
+
+
+const documentsRouter = require('./routes/documents');
+app.use("/documents",documentsRouter);
+
+
+
+const attendanceRouter = require('./routes/attendance');
+app.use("/attendance",attendanceRouter);
+
+
+
+const assignment_documentsRouter = require('./routes/assignment_documents');
+app.use("/assignment_documents",assignment_documentsRouter);
+
+
+
+const answersRouter = require('./routes/answers');
+app.use("/answers",answersRouter);
+
+
+
+const answer_documentsRouter = require('./routes/answer_documents');
+app.use("/answer_documents",answer_documentsRouter);
 
 
 
