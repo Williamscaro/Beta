@@ -3,6 +3,7 @@ import {
   getAllStatus,
   getStatusById,
 } from "../../../api/services/AcademicStatus.js";
+import { Link } from "react-router-dom";
 
 export default function Academic() {
   const [academicStatus, setacademicStatus] = useState([]);
@@ -127,12 +128,19 @@ export default function Academic() {
 
         <hr className="my-4" />
         <div className="row">
-          <button className="w-40 btn btn-primary mx-2 col" type="submit">
+
+
+        <Link to="/register/general-info">
+          <button className="w-40 m-5 btn btn-primary mx-2 col" type="submit">
             Vuelva a Informacion General
           </button>
-          <button className="w-50 btn btn-primary mx-2 col">
-            Continue en Auto Evaluacion
+        </Link>
+
+        <Link to="/register/self-appraisal">
+          <button className="w-40 btn btn-primary mx-2 col">
+            Continue a Auto Evaluación
           </button>
+        </Link>
         </div>
       </form>
     </div>

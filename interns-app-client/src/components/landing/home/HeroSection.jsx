@@ -21,10 +21,10 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">¿Quienes somos?</h1>
-        <p class="col-md-8 fs-4">En <strong>AI Logic</strong> Somos una empresa dominicana con enfoque tecnologico a la banguardia donde nuestras soliciones cumple con los estandares mas competitivos en el mercado y siempre apuntamos a un sistema util, escalable, distinguido y por supuesto eficiente </p>
+      <div className="p-5 mb-4 bg-light rounded-3">
+      <div className="container-fluid py-5">
+        <h1 className="display-5 fw-bold">¿Quienes somos?</h1>
+        <p className="col-md-8 fs-4">En  <strong>AI Logic</strong> Somos una empresa Dominicana con enfoque tecnologico a la banguardia donde nuestras soliciones cumple con los estandares mas competitivos en el mercado y siempre apuntamos a un sistema util, escalable, distinguido y por supuesto eficiente</p>
       </div>
     </div>
     </div>

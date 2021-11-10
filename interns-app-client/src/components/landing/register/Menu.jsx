@@ -29,11 +29,11 @@ export default function Menu() {
               Academicos
             </Link>
           </li>
-          {/* <li className="nav-item">
+          {<li className="nav-item">
             <Link className="nav-link" to={`${url}/self-appraisal`}>
               Auto Evaluacion
             </Link>
-          </li> */}
+          </li> }
           <li className="nav-item">
             <Link className="nav-link " to={`${url}/personal-links`}>
               Enlaces
