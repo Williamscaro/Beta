@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { getProvincias } from "../../../helpers/provincias.js";
 import { getMunicipiosByProvincia } from "../../../helpers/municipios";
 import { Link } from "react-router-dom";
-import Buttons_f_b from "../Buttons_f_b.jsx";
 export default function GeneralInformation() {
   //VARIABLE DECLARATION
   const [provincias, setprovincias] = useState([]);

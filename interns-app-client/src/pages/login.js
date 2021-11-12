@@ -8,6 +8,7 @@ import axios from "axios";
 
 export default function Login() {
   const [listOfUser, setListOfUsers] = useState([]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -35,8 +36,14 @@ export default function Login() {
       <Header />
       <main class="form-signin rounded-bottom align-middle ">
         <form onSubmit={handleSubmit}>
-          <img class="mb-4 " src={large} alt="" width="72" height="57" />
-          <h2 class="h3 mb-3 fw-normal login-title">Login</h2>
+          
+          <div className="form-group">          
+            <img className="mb-4 " src={large} alt="" width="72" height="57" />
+            <h2 className="h3 mb-3 fw-normal login-title ">Login</h2>
+          </div>
+
+
+
           <div class="form-floating my-2">
             <input
               type="text"
@@ -49,7 +56,7 @@ export default function Login() {
 
             <label for="floatingInput">Usuario</label>
           </div>
-          <div class="form-floating  my-2">
+          <div className="form-floating  my-2">
               
               <input
               type="password"
@@ -80,7 +87,7 @@ export default function Login() {
           <input
             onClick={login}
             type="submit"
-            className="w-100 btn btn-lg bg-color-primary btn-send"
+            className="w-100 btn btn-lg bg-color-primary btn-send btn-block"
             value="Iniciar sección"
           />
           <p class="mt-5 mb-3 text-muted">
