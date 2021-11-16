@@ -1,16 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingPage from './pages/index'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import LandingPage from "./pages/index";
 //import 'font-awesome/css/font-awesome.min.css';
 ReactDOM.render(
   <React.StrictMode>
-    
-    <LandingPage/>
-
+    <LandingPage />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
