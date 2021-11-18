@@ -6,45 +6,52 @@ export default function PersonalLinks() {
       <form action="">
         <div className="col-sm-6">
           <label htmlFor="github" className="form-label">
-            git hub
+            GitHub
           </label>
           <input
-            type="text"
+            type="url"
             className="form-control"
-            name="github"
-            id="github"
+            name="github-link"
+            id="github-link"
           />
         </div>
         <div className="col-sm-6">
-          <label htmlFor="github" className="form-label">
-            curriculum vitae
+          <label htmlFor="cv-lb" className="form-label">
+            Curriculum Vitae (Link)
           </label>
           <input
-            type="text"
+            type="url"
             className="form-control"
-            name="github"
-            id="github"
+            name="cv-link"
+            id="cv-link"
           />
         </div>
         <div className="col-sm-6">
-          <label htmlFor="github" className="form-label">
-            linked in
+          <label htmlFor="linkenin-link" className="form-label">
+            LinkedIn
           </label>
           <input
-            type="text"
+            type="url"
             className="form-control"
-            name="github"
-            id="github"
+            name="likedin-link"
+            id="linkedin-link"
           />
         </div>
-        <div className="row">
-          <button className="w-40 btn btn-primary mx-2 col" type="submit">
-            volver
-          </button>
-          <button className="w-50 btn btn-primary mx-2 col">terminar</button>
-        </div>
-        l
+        <br /><br />
+
+              <div className="row">
+
+                        <button className="w-40 btn btn-primary mx-2 col" type="submit">
+                          Volver
+                        </button>
+
+
+                        <button className="w-50 btn btn-primary mx-2 col">Terminar
+                        </button>
+              </div>
+        
       </form>
+
     </div>
   );
 }

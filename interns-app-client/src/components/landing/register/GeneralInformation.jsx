@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getProvincias } from "../../../helpers/provincias.js";
 import { getMunicipiosByProvincia } from "../../../helpers/municipios";
-
+import { Link } from "react-router-dom";
 export default function GeneralInformation() {
   //VARIABLE DECLARATION
   const [provincias, setprovincias] = useState([]);
@@ -139,7 +139,7 @@ export default function GeneralInformation() {
               onChange={handleChangePersonalInfo}
             />
             <div className="invalid-feedback">
-              Please enter a valid email address htmlFor shipping updates.
+              Por favór ingresa un Email Valido.
             </div>
           </div>
           {
@@ -158,7 +158,7 @@ export default function GeneralInformation() {
               onChange={handleChangePersonalInfo}
             />
             <div className="invalid-feedback">
-              Please enter a valid email address htmlFor shipping updates.
+              Por favor ingresa un telefono valido.
             </div>
           </div>
           {
@@ -244,7 +244,7 @@ export default function GeneralInformation() {
               ))}
             </select>
             <div className="invalid-feedback">
-              Por favor seleccione un municipio valida
+              Por favor seleccione un municipio valido
             </div>
           </div>
           {
@@ -289,9 +289,19 @@ export default function GeneralInformation() {
 
         <hr className="my-4" />
 
-        <button className="w-100 btn btn-primary btn-lg" type="submit">
-          Continue en Datos Academicos
+        <Link to="/register/">
+        <button className="w-40 m-5 btn btn-primary btn-lg" type="submit">
+          Volver
         </button>
+        </Link>
+
+
+        <Link to="/register/academic">
+        <button className="w-40 btn btn-primary btn-lg" type="submit">
+          Continue a Datos Académicos
+        </button>
+        </Link>
+        
       </form>
     </div>
   );

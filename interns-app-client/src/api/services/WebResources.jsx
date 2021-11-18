@@ -1,31 +1,31 @@
 const WEB_RESOURCES = [
   {
     id: 1,
-    name: "github",
+    name: "GitHub",
     created_date: "10/25/2021 12:37",
     modify_date: "",
   },
   {
     id: 2,
-    name: "linkedin",
+    name: "LinkedIn",
     created_date: "10/25/2021 12:37",
     modify_date: "",
   },
   {
     id: 3,
-    name: "portafolio",
+    name: "Portafolio",
     created_date: "10/25/2021 12:37",
     modify_date: "",
   },
   {
     id: 4,
-    name: "curriculum vitae",
+    name: "Curriculum Vitae",
     created_date: "10/25/2021 12:37",
     modify_date: "",
   },
   {
     id: 5,
-    name: "bitbuket",
+    name: "Bitbuket",
     created_date: "10/25/2021 12:37",
     modify_date: "",
   },
