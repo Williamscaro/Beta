@@ -1,0 +1,129 @@
+import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../../styles/style.css";
+import { SignoutaltIcon, BarsIcon } from "../../icons";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
+import {Button, Modal, ModalBody} from "reactstrap";
+import CreatePostgroup from './CreatePostgroup';
+
+
+export default function TopNavGroup() {
+  const [modal, setModal] = useState(false);
+
+  const abrirModal =()=>{
+    setModal(true)
+  }
+
+  const cerrarModal =()=>{
+    setModal(false)
+  }
+
+
+  return (
+    <>
+      <header className="pb-3 bg-light border-bottom">
+        <div className="container">
+          <div className="d-flex flex-wrap align-items-center  justify-content-lg-start">
+            <a
+              href="./"
+              className="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none"
+            ></a>
+
+            <DropdownButton id="dropdown-basic-button" title={<BarsIcon />}>
+              <Dropdown.Item href="#/action-1" >
+                Grupos Activos
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-2">
+              Grupos Desactivados
+              </Dropdown.Item>
+
+
+              <Dropdown.Item
+                href="#/action-6"
+                className="bg-secondary text-white d-block d-sm-block d-md-none"
+              >
+                {" "}
+                <SignoutaltIcon /> Cerrar seccion
+              </Dropdown.Item>
+            </DropdownButton>
+
+            <div class="col px-4 d-block d-sm-block d-md-none" >
+              <DropdownButton
+                id="dropdown-basic-button"
+                variant="info"
+                title="Nuevo"
+              >
+                <Dropdown.Item href="#/action-1">
+                  Nuevo Grupo
+                </Dropdown.Item>
+              </DropdownButton>
+            </div>
+
+            <div class="col d-block d-sm-block d-md-none ">
+              <button type="button" className="btn btn-warning px-3">
+                {" "}
+                J{" "}
+              </button>
+            </div>
+
+            <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li>
+                <a href="./" className="nav-link  px-4 ">
+                  Principal
+                </a>
+              </li>
+            </ul>
+
+            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"></form>
+
+            <div className="text-end">
+              <div className="row d-flex">
+                <div class="col d-none d-sm-none d-md-block">
+                  <DropdownButton
+                    id="dropdown-basic-button"
+                    variant="info"
+                    title="Nuevo"
+                  >
+                    <Dropdown.Item href="#/action-1"  onClick={abrirModal}>
+                      Nuevo Grupo
+                    </Dropdown.Item>
+                  </DropdownButton>
+                </div>
+
+                <div class="col  d-none d-sm-none d-md-block">
+                  <button
+                    type="button"
+                    className="btn btn-outline-dark d-none d-sm-none d-md-block  "
+                  >
+                    <SignoutaltIcon />
+                  </button>
+                </div>
+
+                <div class="col d-none d-sm-none d-md-block">
+                  <button
+                    type="button"
+                    className="btn btn-warning px-3 d-none d-sm-none d-md-block "
+                  >
+                    {" "}
+                    J{" "}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <Modal className="modal-md position-center me-5"
+        isOpen={modal}>
+       <ModalBody className="">
+          <CreatePostgroup/>
+          <button className="btn btn-secondary mt-5" onClick={cerrarModal}>Cerrar</button>
+       </ModalBody>
+      </Modal>
+
+    </>
+  );
+}

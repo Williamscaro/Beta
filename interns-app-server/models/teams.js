@@ -12,8 +12,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     status: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     }
   }, {
     sequelize,

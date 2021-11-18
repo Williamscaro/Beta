@@ -24,7 +24,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     is_team_Leader: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BOOLEAN,
       allowNull: true
     },
     status: {
